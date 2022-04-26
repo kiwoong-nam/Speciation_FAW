@@ -1,0 +1,59 @@
+##### TO GENERATE VCF FILE
+
+SRA2fastq.sh
+	: Downloads raw fastq file from NCBI
+
+find_adaptator.sh
+	: Guesses adapter sequences using AdapterRemoval
+
+remove_adaptator.sh
+	: Removing adaptors using AdapterRemoval
+
+Sf.mapping.sh
+	: Performs mapping
+
+gatk.sh
+	: Performs haplotype calling from bam files
+
+script_knam_Schlum.sh
+	: Performs variant calling and filtering
+
+vcfmaf.sh
+	: Discards singleton polymorphisms ( MAF < 0.01 < 2 /(55 indiviuals * 2 homologous chromosome))
+
+##### ANCESTRY COEFFICIENT ANALYSIS
+
+vcftoplink.sh
+	: Converts vcf format to ped format
+
+lancer_pedtogeno.sh
+	: Converts ped format to geno format.
+
+lancer_sNMF.sh
+	: Executes sNMF binary
+
+##### PCA
+PCA_plinkmaf.sh
+	: Performs PCA analysis using plink
+
+##### FST CALCULATION
+
+script_FST.sh
+	: Calculates Fst between Kenya and the others and between sfC and sfR
+
+randFst_kenya.pl
+	: Calculates Fst from random grouping (Kenya vs others)
+
+randFst_sfCsfR.pl
+	: Calculates Fst from random grouping (sfC vs sfR)
+
+##### Visualization
+PCR.R
+	: For PCR
+
+sNMF.R
+	: For sNMF
+
+##### VCF FILE 
+Schlum.SNP.filteredmaf.recode.vcf.gz
+	: The final resulting vcf file used for the analyese
