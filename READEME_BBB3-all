@@ -1,0 +1,45 @@
+ref_faidx.sh
+	: Indexing the reference genome sequencs using samtools
+
+ref_index.sh
+	: Indexing the reference genome sequence for bwa
+	
+dataset1.sh
+	: Fastq file filtering and mapping for 34 samples
+
+dataset2.sh
+	: Fastq file filtering and mapping for remaining 21 samples
+
+jm.dataset1.pl
+	: a script used to generate dataset1.sh
+	
+jm.dataset2.pl
+	: a script used to generate dataset2.sh
+	
+bam.index.sh
+	: Indexing bam files
+	
+variant_calling/*
+	: Variant calling using mpileup
+		
+jm.variantcalling.pl
+	: Creating scripts at variant_calling/*
+	
+vcf.concate.sh
+	: Concatenating vcf files
+	
+vcf.rawcounting.pl
+	: Counting the number of SNPs before filtering
+
+vcf.rawcounting.sh
+	: The execution of vcf.rawcounting.pl
+	
+vcf.filtering.sh
+	: SNP filtering
+
+pca.eigen.sh
+	: PCA analysis
+
+pca.table.pl
+	: Generation of a table for visualization
+
